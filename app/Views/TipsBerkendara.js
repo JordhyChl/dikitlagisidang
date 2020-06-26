@@ -12,7 +12,7 @@ import { connect } from 'react-redux';
 import { navigateTo } from '../Redux/actions';
 const backgroundImage = require('../img/bg3.jpg');
 
-const ServiceTips = ({ activeRoute, navigateTo }) => (
+const TipsBerkendara = ({ activeRoute, navigateTo }) => (
     <ImageBackground
       source={backgroundImage}
       style={styles.container}
@@ -22,21 +22,21 @@ const ServiceTips = ({ activeRoute, navigateTo }) => (
           <Text style={styles.header1}>{activeRoute.name}</Text>
       <TouchableOpacity
             style={styles.button}
-            onPress={() => { navigateTo('Service Mobil'); }}
+            onPress={() => { navigateTo('Tips Satu'); }}
       >
-            <Text style={{color: "#ffffff"}}>Service</Text>
+            <Text style={{color: "#ffffff"}}>Tips Satu</Text>
       </TouchableOpacity>
       <TouchableOpacity
             style={styles.button}
-            onPress={() => { navigateTo('Tips Berkendara'); }}
+            onPress={() => { navigateTo('Tips Dua'); }}
       >
-            <Text style={{color: "#ffffff"}}>Tips</Text>
+            <Text style={{color: "#ffffff"}}>Tips Dua</Text>
       </TouchableOpacity>
       </ScrollView>
     </ImageBackground>
 );
 
-ServiceTips.propTypes = {
+TipsBerkendara.propTypes = {
   activeRoute: PropTypes.shape({
     name: PropTypes.string.isRequired,
     screen: PropTypes.any.isRequired,
@@ -94,5 +94,5 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(ServiceTips);
+)(TipsBerkendara);
 

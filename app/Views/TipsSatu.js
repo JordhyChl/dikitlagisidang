@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux';
 
-const BanKempis = ({ activeRoute }) => (
+const TipsSatu = ({ activeRoute }) => (
 <View style={styles.view}>
     <ScrollView>
         <Text style={styles.header1}>{activeRoute.name}</Text>
@@ -17,7 +17,7 @@ const BanKempis = ({ activeRoute }) => (
         padding: 10,
         justifyContent: "center", 
         backgroundColor: "blue", }} />
-    <Text style={styles.text}>Konten Ban Kempis</Text>
+    <Text style={styles.text}>Konten Tips Satu</Text>
     <Text style={styles.textSub}>1.  Periksa Kabel Aki. Kabel Aki harus terpasang secara kencang di kedua kutub, kutub positif atau kutub negatif. Dan periksa juga apakah kualitas kabel tersebut masih baik.</Text>
     <Text style={styles.textSub}>2.  Periksa Indikator warna aki. Indikator tersebut menunjukan keadaan aki apakah aki dalam keadaan baik atau tidak</Text>
     <Text style={styles.textSub}>3.  Periksa Kutub Positif dan Negatif, apakah terdapat kotoran atau kerak-kerak yang mengganggu arus listrik kendaraan.</Text>
@@ -62,4 +62,4 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-)(BanKempis);
+)(TipsSatu);

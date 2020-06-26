@@ -6,6 +6,7 @@
     "start": "npx react-native run-android"
   },
   "dependencies": {
+    "@react-native-community/picker": "^1.6.5",
     "global": "^4.3.2",
     "prettier": "^1.15.3",
     "prop-types": "^15.6.2",

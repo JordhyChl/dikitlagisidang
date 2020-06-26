@@ -9,6 +9,13 @@ import STScreen from '../Views/ServiceTips';
 import GScreen from '../Views/Games';
 import WScreen from '../Views/Workshop';
 import Workshop from '../Views/Workshop';
+import PAScreen from '../Views/PeriksaAki';
+import PKBScreen from '../Views/PeriksaKabelBusi';
+import PSScreen from '../Views/PeriksaSekring';
+import SMScreen from '../Views/ServiceMobil';
+import TBScreen from '../Views/TipsBerkendara';
+import TSScreen from '../Views/TipsSatu';
+import TDScreen from '../Views/TipsDua';
 
 /* Icon key is optional. It must be of type string and its value should match a valid provider icon
   name.
@@ -24,4 +31,11 @@ export default [
   {name: 'Temperatur Naik', screen: TempScreen},
   {name: 'About', screen: AboutScreen},
   {name: 'Credits', screen: CreditsScreen},
+  {name: 'Periksa Aki', screen: PAScreen},
+  {name: 'Periksa Kabel Busi', screen: PKBScreen},
+  {name: 'Periksa Sekring', screen: PSScreen},
+  {name: 'Service Mobil', screen: SMScreen},
+  {name: 'Tips Berkendara', screen: TBScreen},
+  {name: 'Tips Satu', screen: TSScreen},
+  {name: 'Tips Dua', screen: TDScreen},
 ];
